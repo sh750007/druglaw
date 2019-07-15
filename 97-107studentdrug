@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>area | amCharts</title>
+  <meta name="description" content="各學制" />
+  
+  <!-- amCharts javascript sources -->
+  <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+  <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+  
+
+  <!-- amCharts javascript code -->
+  <script type="text/javascript">
+   AmCharts.makeChart("chartdiv",
+    {
+     "type": "serial",
+     "categoryField": "category",
+     "startDuration": 1,
+     "fontSize": 16,
+     "categoryAxis": {
+      "gridPosition": "start"
+     },
+     "trendLines": [],
+     "graphs": [
+      {
+       "balloonText": "[[title]] of [[category]]:[[value]]",
+       "fillAlphas": 0.7,
+       "id": "AmGraph-1",
+       "lineAlpha": 0,
+       "title": "國小",
+       "valueField": "國小"
+      },
+      {
+       "balloonText": "[[title]] of [[category]]:[[value]]",
+       "fillAlphas": 0.7,
+       "id": "AmGraph-2",
+       "lineAlpha": 0,
+       "title": "國中",
+       "valueField": "國中"
+      },
+      {
+       "fillAlphas": 0.33,
+       "id": "AmGraph-3",
+       "title": "高中",
+       "valueField": "高中職"
+      },
+      {
+       "fillAlphas": 0.26,
+       "id": "AmGraph-4",
+       "title": "大專校院",
+       "valueField": "大專校院"
+      }
+     ],
+     "guides": [],
+     "valueAxes": [
+      {
+       "id": "ValueAxis-1",
+       "title": ""
+      }
+     ],
+     "allLabels": [],
+     "balloon": {},
+     "legend": {
+      "enabled": true
+     },
+     "titles": [
+      {
+       "id": "Title-1",
+       "size": 15,
+       "text": ""
+      }
+     ],
+     "dataProvider": [
+      {
+       "category": "96",
+       "國小": "4",
+       "國中": "164",
+       "高中職": "116",
+       "大專校院": "10"
+      },
+      {
+       "category": "97",
+       "國小": "14",
+       "國中": "204",
+       "高中職": "585",
+       "大專校院": "12"
+      },
+      {
+       "category": "98",
+       "國小": "6",
+       "國中": "392",
+       "高中職": "902",
+       "大專校院": "8"
+      },
+      {
+       "category": "99",
+       "國小": "12",
+       "國中": "435",
+       "高中職": "1099",
+       "大專校院": "13"
+      },
+      {
+       "category": "100",
+       "國小": "3",
+       "國中": "598",
+       "高中職": "1174",
+       "大專校院": "35"
+      },
+      {
+       "category": "101",
+       "國小": "8",
+       "國中": "855",
+       "高中職": "1503",
+       "大專校院": "66"
+      },
+      {
+       "category": "102",
+       "國小": "10",
+       "國中": "641",
+       "高中職": "1257",
+       "大專校院": "113"
+      },
+      {
+       "category": "103",
+       "國小": "8",
+       "國中": "582",
+       "高中職": "1031",
+       "大專校院": "79"
+      },
+      {
+       "category": "104",
+       "國小": "7",
+       "國中": "600",
+       "高中職": "1029",
+       "大專校院": "113"
+      },
+      {
+       "category": "105",
+       "國小": "5",
+       "國中": "361",
+       "高中職": "581",
+       "大專校院": "59"
+      }
+     ]
+    }
+   );
+  </script>
+ </head>
+ <body>
+  <div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+ </body>
+</html>
